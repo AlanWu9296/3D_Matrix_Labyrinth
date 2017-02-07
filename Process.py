@@ -11,6 +11,7 @@ for point in points:
     logicPoints[str(logicPoint.position)] = logicPoint
 #initialize neighbors
 lf.identifyNeighbors(logicPoints)
+lf.identifyBoundarys(logicPoints)
 #genrating paths
 path = lf.binaryTree(logicPoints)
 #Draw the graph
